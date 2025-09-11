@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Blauw
 
   #### Je focus:
-  hier je focus (kies uit responsive óf surface plane)
+  Responsive
  
 </details>
 
@@ -36,15 +36,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
-
+  https://www.starbucks.nl 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+Homepage
+  <img src="images/Screenshot1.png" width="375px" alt="home pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="menu pagina">
  
 </details>
 
@@ -57,6 +56,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  - De pagina is goed te gebruiken met een screen reader.
+  - Weinig tot geen H1 te vinden
+  - Geen ondertitelingen/videos
 
 </details>
 
@@ -68,13 +70,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="images/Breakdown.jpg" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="images/Breakdown.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
 </details>
 
@@ -89,17 +88,30 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Ik heb een begin gemaakt aan de website. Dit vind ik altijd lastig dus gebruik ik soms een deel van een andere website die ik al eerder heb gemaakt op een klein begin te hebben. Verder gaat het wel oke.
+
+  Gebruikte bronnen:
+  https://www.w3schools.com/tags/tag_figure.asp
+
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Serra          | Geis               | Vince       | student 4        |
   | ---            | ---                | ---          | ---              |
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
+Serra : Ik wil graag de opbouw van mijn HTML bespreken en kijken of er nog dingen niet goed zijn. Ook heb ik denk ik hulp nodig met het uitlijnen van de elementen door middel van een grid.
+-Groene lijn onder de eerste section gaat niet weg.
+-Deel van de padding weghalen lukt niet
+
+Geis: Css bespreken en kijken welke elementen in een Ul horen.
+
+Vince: M'n navigatie perfect namaken en weten welke elementen ik daarvoor nodig heb in mijn css. En gebruik ik de sections goed en klopt de footer sestematisch.
+- 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen

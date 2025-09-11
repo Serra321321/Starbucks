@@ -1,31 +1,196 @@
 /**************/
-/* CSS REMEDY */
+/* CSS */
 /**************/
 *, *::after, *::before {
-  box-sizing:border-box;  
+  box-sizing: border-box;  
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+}
 
-
-
-
+body {
+  font-family: system-ui, sans-serif; 
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.5;
+}
 
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+  --color-bg: #ffffff;
+  --color-text: #000000;
+  --color-green: #016341;
+  --color-card: #F7F7F7; 
 }
 
+@font-face {
+  font-family: "SoDoSans";
+  src: url("../fonts/SoDoSans-SemiBold.woff") format("woff");
+}
 
+@font-face {
+  font-family: "SoDoSansLight";
+  src: url("../fonts/SoDoSans-Light.woff") format("woff");
+}
 
-
+@font-face {
+  font-family: "SoDoSansRegular";
+  src: url("../fonts/SoDoSans-Regular.woff") format("woff");
+}
 
 /****************/
-/* JOUW STYLING */
+/* HEADER en NAV */
 /****************/
 
-/* jouw code */
+header {
+  border-bottom: 1px solid #ddd;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header nav a img {
+  display: block;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--color-text);
+  font-size: 0.95rem;
+}
+
+header nav a:hover {
+  color: var(--color-green);
+}
+
+/***********/
+/* HERO    */
+/***********/
+
+section:first-of-type {
+  display:grid;
+  margin: 0 auto;
+  background-color: var(--color-green);
+  color: var(--color-bg);
+}
+
+section:first-of-type h1 {
+  font-size: 1.2rem;
+  padding-left: 1.5em;
+  font-family: "SoDoSansRegular", sans-serif;
+}
+
+section:first-of-type button {
+  background-color: var(--color-bg);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  margin: 1.5em;
+  margin-top: 0;
+  border-radius: 100px;
+  font-weight: bold;
+  font-family: "SoDoSans";
+  font-size: 0.9rem;
+}
+
+section:first-of-type button p {
+  color: var(--color-text);
+}
+
+section:first-of-type button:hover {
+  background: var(--color-card);
+}
+
+section:first-of-type figure {
+  position: relative;
+  margin: 0;
+}
+
+section:first-of-type img {
+  width: 100%;
+  height: auto;
+ 
+}
+
+section:first-of-type figcaption {
+  position: absolute;
+  top: 13rem;
+  left: 1rem;
+  background: var(--color-bg);
+  color: var(--color-green);
+  padding: 0.25rem 0.25rem;
+  border-radius: 0.25rem;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+/***********/
+/* CARD    */
+/***********/
+section:last-of-type {
+  background-color: var(--color-card);
+  border-radius: 8px;
+  margin: 1em;
+  max-width: 600px;
+  text-align: left;
+  margin-bottom: 2em;
+
+}
+
+section:last-of-type img {
+  width: 100%;
+  max-width: 540px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+section:last-of-type h2 {
+  font-size: 1.3rem;
+  font-family: "SoDoSans", sans-serif;
+  padding: 1em;
+}
+
+section:last-of-type p {
+  padding-left: 1em ;
+  padding-right: 1em ;
+  font-family: "SoDoSansRegular";
+  font-size: 0.8rem;
+}
+
+section:last-of-type button {
+  display: block;
+  width: 70%;
+  background-color: var(--color-green);
+  color: var(--color-bg);
+  font-family: "SoDoSansRegular";
+  border: none;
+  padding: 1rem 0;
+  border-radius: 100px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  margin-left: 3rem;
+}
+
+section:last-of-type button:hover {
+  background-color: #00754A;
+}
+
 
