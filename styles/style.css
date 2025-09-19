@@ -1,3 +1,24 @@
+@font-face {
+  font-family: "SoDoSans";
+  src: url("../fonts/SoDoSans-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SoDoSansLight";
+  src: url("../fonts/SoDoSans-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SoDoSansRegular";
+  src: url("../fonts/SoDoSans-Regular.woff") format("woff");
+}
+
+h1 {
+  font-size: 1.2rem;
+  padding-left: 1.5em;
+  font-family: "SoDoSansRegular", sans-serif;
+}
+
 /**************/
 /* CSS */
 /**************/
@@ -25,98 +46,206 @@ body {
   --color-text: #000000;
   --color-green: #016341;
   --color-card: #F7F7F7; 
+  --color-hover: #46906E;
+  --color-hover2: #D1E0DA;
+  --color-footer: #1e3932;
+  --color-hr: #3c5c52;
+  --color-shadow: rgba(0,0,0,0.1);
 }
 
-@font-face {
-  font-family: "SoDoSans";
-  src: url("../fonts/SoDoSans-SemiBold.woff") format("woff");
-}
-
-@font-face {
-  font-family: "SoDoSansLight";
-  src: url("../fonts/SoDoSans-Light.woff") format("woff");
-}
-
-@font-face {
-  font-family: "SoDoSansRegular";
-  src: url("../fonts/SoDoSans-Regular.woff") format("woff");
-}
 
 /****************/
 /* HEADER en NAV */
 /****************/
 
 header {
-  border-bottom: 1px solid #ddd;
+  background-color: var(--color-bg);
+  position: sticky;
+  top: 0;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position: sticky;
+  z-index: 1100;
+  background-color: var(--color-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .5rem .5rem;
 }
 
-header nav {
+header nav:nth-of-type(1) button {
+  position: relative;
+  z-index: 200;
+  font-size: 1rem;
+  width: 3em;
+  aspect-ratio: 1;
+  padding: 0;
+  margin: 0;
+  border: none;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  order: 1;
+  background: none;
+}
+
+header nav:nth-of-type(1) button span {
+  display: block;
+  width: 1.5em;
+  height: .2em;
+  background-color: var(--color-text);
+  border-radius: 1em;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  transition: .5s;
+}
+
+header nav:nth-of-type(1) button span:nth-of-type(1) {
+  translate: 0 -.5em
+}
+
+header nav:nth-of-type(1) button span:nth-of-type(3) {
+  translate: 0 .5em
+}
+
+header nav:nth-of-type(1) button.is-open span:nth-of-type(1) {
+  translate: 0;
+  rotate: 45deg;
+}
+
+header nav:nth-of-type(1) button.is-open span:nth-of-type(2) {
+  scale: 0 1;
+}
+
+header nav:nth-of-type(1) button.is-open span:nth-of-type(3) {
+  translate: 0;
+  rotate: -45deg;
+}
+
+header nav:nth-of-type(1) {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.75rem 1rem;
-  max-width: 1200px;
   margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
 }
 
-header nav a img {
+header nav:nth-of-type(1) a img {
   display: block;
 }
 
-header nav ul {
-  list-style: none;
+header nav:nth-of-type(1) ul {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-bg);
   display: flex;
-  gap: 1.5rem;
-  padding: 0;
-  margin: 0;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  gap: 2rem;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 100;
 }
 
-header nav a {
+header nav:nth-of-type(1) ul.show-menu {
+  transform: translateY(0);
+}
+
+header nav ul li a {
+  font-family: "SoDoSansRegular";
+
+}
+
+header nav:nth-of-type(1) a {
   text-decoration: none;
   color: var(--color-text);
   font-size: 0.95rem;
+  order: 1;
 }
 
-header nav a:hover {
+header nav:nth-of-type(1) a:hover {
   color: var(--color-green);
 }
 
+/* Nav2 */
+
+header nav:nth-of-type(2) {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+  box-shadow: 0 -1px 5px var(--color-shadow);
+  gap: 5px; 
+}
+
+header nav:nth-of-type(2) section {
+  display: flex;
+  justify-content: space-between; 
+  width: 200px; 
+  align-items: center;
+}
+
+header nav:nth-of-type(2) section:nth-of-type(1),
+header nav:nth-of-type(2) section:nth-of-type(2) {
+  display: flex;
+  justify-content: center;
+  gap: 50px; 
+}
+
+header nav:nth-of-type(2) section:nth-of-type(1) svg {
+  width: 24px;
+  height: 24px;
+}
+
+header nav:nth-of-type(2) section:nth-of-type(2) h2 {
+  text-align: center;
+  font-family: "SoDoSansRegular";
+  font-size: 1em;
+}
+
+
 /***********/
-/* HERO    */
+/* MAIN    */
 /***********/
 
-section:first-of-type {
+main section:nth-of-type(1) {
   display:grid;
   margin: 0 auto;
   background-color: var(--color-green);
   color: var(--color-bg);
 }
 
-section:first-of-type h1 {
-  font-size: 1.2rem;
-  padding-left: 1.5em;
-  font-family: "SoDoSansRegular", sans-serif;
-}
-
-section:first-of-type button {
+main section button {
   background-color: var(--color-bg);
   border: none;
   padding: 0.75rem 1.5rem;
   margin: 1.5em;
   margin-top: 0;
   border-radius: 100px;
-  font-weight: bold;
   font-family: "SoDoSans";
   font-size: 0.9rem;
+  transition: var(--color-green) 1.5s ease-in-out;
+}
+
+main section button:hover {
+  background-color: var(--color-hover2);
 }
 
 section:first-of-type button p {
   color: var(--color-text);
-}
-
-section:first-of-type button:hover {
-  background: var(--color-card);
 }
 
 section:first-of-type figure {
@@ -130,67 +259,415 @@ section:first-of-type img {
  
 }
 
-section:first-of-type figcaption {
-  position: absolute;
-  top: 13rem;
-  left: 1rem;
-  background: var(--color-bg);
-  color: var(--color-green);
-  padding: 0.25rem 0.25rem;
-  border-radius: 0.25rem;
-  font-size: 0.7rem;
-  font-weight: bold;
-}
+/* card 1 */
 
-/***********/
-/* CARD    */
-/***********/
-section:last-of-type {
+main section:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
   background-color: var(--color-card);
   border-radius: 8px;
   margin: 1em;
-  max-width: 600px;
   text-align: left;
   margin-bottom: 2em;
 
 }
 
-section:last-of-type img {
+main section:nth-of-type(2) img {
+  order: -1;
   width: 100%;
-  max-width: 540px;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
 
-section:last-of-type h2 {
-  font-size: 1.3rem;
+main section:nth-of-type(2) h2 {
+  font-size: 1.2rem;
   font-family: "SoDoSans", sans-serif;
-  padding: 1em;
+  margin-left: 1em;
+  margin-bottom: 0;
 }
 
-section:last-of-type p {
-  padding-left: 1em ;
-  padding-right: 1em ;
+main section:nth-of-type(2) p {
   font-family: "SoDoSansRegular";
   font-size: 0.8rem;
+  padding: 1.5em;
+  margin: 0;
 }
 
-section:last-of-type button {
-  display: block;
+main section:nth-of-type(2) button {
   width: 70%;
+  margin-left: 4em;
   background-color: var(--color-green);
   color: var(--color-bg);
   font-family: "SoDoSansRegular";
-  border: none;
-  padding: 1rem 0;
+  padding: 1rem;
   border-radius: 100px;
   cursor: pointer;
+  font-size: 1rem;
+  transition: var(--color-green) 1.5s ease-in-out;
+}
+
+main section:nth-of-type(2) button:hover {
+  background-color: var(--color-hover);
+}
+
+/* card 2 */
+
+main section:nth-of-type(3) {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-green);
+  border-radius: 8px;
+  margin: 1em;
+  text-align: left;
+  margin-bottom: 2em;
+
+}
+
+main section:nth-of-type(3) img {
+  order: -1;
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+main section:nth-of-type(3) h2 {
+  font-size: 1.2rem;
+  font-family: "SoDoSans", sans-serif;
+  margin-left: 1em;
+  margin-bottom: 0;
+  color: var(--color-bg);
+}
+
+main section:nth-of-type(3) p {
+  font-family: "SoDoSansRegular";
   font-size: 0.8rem;
-  margin-left: 3rem;
+  padding: 1.5em;
+  margin: 0;
+  color: var(--color-bg);
 }
 
-section:last-of-type button:hover {
-  background-color: #00754A;
+main section:nth-of-type(3) button {
+  width: 70%;
+  margin-left: 4em;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: "SoDoSansRegular";
+  padding: 1rem;
+  border-radius: 100px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: var(--color-green) 1.5s ease-in-out;
 }
 
+main section:nth-of-type(3) button:hover {
+  background-color: var(--color-hover2);
+}
 
+/* card 3 */
+
+main section:nth-of-type(4) {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-card);
+  border-radius: 8px;
+  margin: 1em;
+  text-align: left;
+  margin-bottom: 2em;
+
+}
+
+main section:nth-of-type(4) img {
+  order: -1;
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+main section:nth-of-type(4) h2 {
+  font-size: 1.2rem;
+  font-family: "SoDoSans", sans-serif;
+  margin-left: 1em;
+  margin-bottom: 0;
+}
+
+main section:nth-of-type(4) p {
+  font-family: "SoDoSansRegular";
+  font-size: 0.8rem;
+  padding: 1.5em;
+  margin: 0;
+}
+
+main section:nth-of-type(4) button {
+  width: 70%;
+  margin-left: 4em;
+  background-color: var(--color-green);
+  color: var(--color-bg);
+  font-family: "SoDoSansRegular";
+  padding: 1rem;
+  border-radius: 100px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: var(--color-green) 1.5s ease-in-out;
+}
+
+main section:nth-of-type(4) button:hover {
+  background-color: var(--color-hover);
+}
+
+/* card 4 */
+
+main section:nth-of-type(5) {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-green);
+  border-radius: 8px;
+  margin: 1em;
+  text-align: left;
+  margin-bottom: 2em;
+
+}
+
+main section:nth-of-type(5) img {
+  order: -1;
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+main section:nth-of-type(5) h2 {
+  font-size: 1.2rem;
+  font-family: "SoDoSans", sans-serif;
+  margin-left: 1em;
+  margin-bottom: 0;
+  color: var(--color-bg);
+}
+
+main section:nth-of-type(5) p {
+  font-family: "SoDoSansRegular";
+  font-size: 0.8rem;
+  padding: 1.5em;
+  margin: 0;
+  color: var(--color-bg);
+}
+
+main section:nth-of-type(5) button {
+  width: 70%;
+  margin-left: 4em;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: "SoDoSansRegular";
+  padding: 1rem;
+  border-radius: 100px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: var(--color-green) 1.5s ease-in-out;
+}
+
+main section:nth-of-type(5) button:hover {
+  background-color: var(--color-hover2);
+}
+
+/* card 5 */
+
+main section:nth-of-type(6) {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-card);
+  border-radius: 8px;
+  margin: 1em;
+  text-align: left;
+  margin-bottom: 2em;
+
+}
+
+main section:nth-of-type(6) img {
+  order: -1;
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+main section:nth-of-type(6) h2 {
+  font-size: 1.2rem;
+  font-family: "SoDoSans", sans-serif;
+  margin-left: 1em;
+  margin-bottom: 0;
+}
+
+main section:nth-of-type(6) p {
+  font-family: "SoDoSansRegular";
+  font-size: 0.8rem;
+  padding: 1.5em;
+  margin: 0;
+}
+
+main section:nth-of-type(6) button {
+  width: 70%;
+  margin-left: 4em;
+  background-color: var(--color-green);
+  color: var(--color-bg);
+  font-family: "SoDoSansRegular";
+  padding: 1rem;
+  border-radius: 100px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: var(--color-green) 1.5s ease-in-out;
+}
+
+main section:nth-of-type(6) button:hover {
+  background-color: var(--color-hover);
+}
+
+/* google maps */
+
+main section:nth-of-type(7) {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-green);
+  border-radius: 10px;
+  margin: 1em;
+  text-align: left;
+  margin-bottom: 2em;
+
+}
+
+main section:nth-of-type(7) iframe {
+  order: -1;
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  height: 12em;
+}
+
+main section:nth-of-type(7) h2 {
+  font-size: 1.2rem;
+  font-family: "SoDoSans", sans-serif;
+  margin-left: 1em;
+  margin-bottom: 0;
+  color: var(--color-bg);
+}
+
+main section:nth-of-type(7) p {
+  font-family: "SoDoSansRegular";
+  font-size: 0.8rem;
+  padding: 1.5em;
+  margin: 0;
+  color: var(--color-bg);
+}
+
+main section:nth-of-type(7) button {
+  width: 70%;
+  margin-left: 4em;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: "SoDoSansRegular";
+  padding: 1rem;
+  border-radius: 100px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: var(--color-green) 1.5s ease-in-out;
+}
+
+main section:nth-of-type(7) button:hover {
+  background-color: var(--color-hover2);
+}
+
+/* Footer */
+
+footer {
+  background-color: var(--color-footer);
+  color: var(--color-bg);
+  padding: 20px 20px;
+}
+
+footer img {
+  margin-bottom: .5em;
+}
+
+footer section:nth-of-type(1),
+footer section:nth-of-type(2),
+footer section:nth-of-type(3) {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+footer button {
+  background: none;
+  border: none;
+  color: var(--color-bg);
+  font-size: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  font-family: "SoDoSansRegular";
+  margin-left: -.5em;
+}
+
+footer ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: none;
+}
+
+footer li a {
+  color: var(--color-hover2);
+  text-decoration: none;
+  display: block;
+  padding: 8px 0;
+}
+
+footer li a:hover {
+  color: var(--color-bg);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--color-hr);
+  margin: 30px 0;
+}
+
+footer section:nth-of-type(4) {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+footer section:nth-of-type(4) a {
+  color: var(--color-hover2);
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+footer section:nth-of-type(4) a:hover {
+  color: var(--color-bg);
+}
+
+footer section:nth-of-type(5) {
+  display: flex;
+  gap: 20px;
+}
+
+footer section:nth-of-type(5) svg {
+  width: 30px;
+  fill: var(--color-bg);
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  footer section:nth-of-type(1) {
+    flex-direction: row;
+    gap: 60px;
+  }
+
+  footer section:nth-of-type(4) {
+    flex-direction: row;
+    gap: 20px;
+  }
+}

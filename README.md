@@ -98,7 +98,7 @@ Homepage
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Serra          | Geis               | Vince       | student 4        |
+  | Serra          | Geis               | Vince       | june        |
   | ---            | ---                | ---          | ---              |
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
@@ -116,10 +116,19 @@ Vince: M'n navigatie perfect namaken en weten welke elementen ik daarvoor nodig 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+- Delen van mn code moeten in het engels.
+- 3 Stylesheets (alegemeen,header,ect) een per pagina
+- Section moet altijd een heading H2.
+- Footer "a" moeten in een list.
+- Nav in de footer
+- button in de footer want die links moeten kunnen uitklappen.
+- icons halen uit de html van de officiele website.
+- sections maken van de 2de.
+- main gebruiken voor uitlijnen.
+- Voor de verschillende main een eigen css pagina.
+- hekje gebruiken voor niet werkende links.
+- Classes gebruiken mag wel voor visually hidden/arialabel. liever visually hidden + class, is om een deel extra bij de scren reader op te noemen als het niet gezien hoeft te worden zeg maar.
+- display: grid; grid-template-colums: 1fr 1fr 1fr; , gebruiken met grid maken. 
 
 </details>
 
@@ -145,6 +154,10 @@ Vince: M'n navigatie perfect namaken en weten welke elementen ik daarvoor nodig 
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
+Serra : ik wil weten hoe ik m’n 2de navigatie moet maken en heb hulp nodig met m’n hamburgermenu.
+Geis : ik wil kijken of mijn html en css een beetje oke is, weten of ik aspect ratio in mijn css mag gebruiken en vragen hoeveel van mijn header ik moet uitwerken en wat de handigste manier is om dat uit te werken.
+June :
+Vince :
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen

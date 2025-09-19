@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="styles/style2.css" rel="stylesheet">
+	<link rel="icon" type="image/x-icon" href="images/logo.svg.png">
+  <script defer src="script.js"></script>
+
+
+
+  let menuButton = document.querySelector("header > nav > button"); 
+let navMenu = document.querySelector("header nav ul");
+
+menuButton.addEventListener("click", () => {
+  menuButton.classList.toggle("is-open");
+  navMenu.classList.toggle("show-menu");
+});
+
+/* Menu sluiten bij klikken op link */
+navMenu.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", () => {
+    menuButton.classList.remove("is-open");
+    navMenu.classList.remove("show-menu");
+  });
+});
