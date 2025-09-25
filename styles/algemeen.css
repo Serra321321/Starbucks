@@ -1,0 +1,434 @@
+@font-face {
+  font-family: "SoDoSans";
+  src: url("../fonts/SoDoSans-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SoDoSansLight";
+  src: url("../fonts/SoDoSans-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SoDoSansRegular";
+  src: url("../fonts/SoDoSans-Regular.woff") format("woff");
+}
+
+/**************/
+/* CSS */
+/**************/
+
+*, *::after, *::before {
+  box-sizing: border-box;  
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif; 
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+
+:root {
+  --color-bg: #ffffff;
+  --color-text2: #ffffff;
+  --color-text: #000000;
+  --color-green: #016341;
+  --color-nav: #016341;
+  --color-card: #F7F7F7; 
+  --color-hover: #46906E;
+  --color-hover2: #D1E0DA;
+  --color-footer: #1e3932;
+  --color-hr: #3c5c52;
+  --color-shadow: rgba(0,0,0,0.3);
+  --color-gray: #B7B7B7;
+}
+
+/* Dark mode */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+  --color-bg: #000000;
+  --color-text2: #ffffff;
+  --color-text: #ffffff;
+  --color-green: #1e3932;
+  --color-nav: #D1E0DA;
+  --color-card: #46906E; 
+  --color-hover: #101c19;
+  --color-hover2: #181818;
+  --color-footer: #1e3932;
+  --color-hr: #3c5c52;
+  --color-shadow: rgba(0,0,0,0.3);
+  --color-gray: #B7B7B7;
+  }
+}
+
+/* Responsive */
+
+
+@media (min-width: 700px) {
+  header nav:nth-of-type(1) ul {
+    position: static;
+    transform: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: auto;
+    background-color: transparent;
+    
+  }
+
+  header nav:nth-of-type(1) button {
+    display: none;
+  }
+
+  header nav:nth-of-type(1) a {
+    font-family: "SoDoSans";
+    letter-spacing: 1.4px;
+    font-size: .9em;
+}
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    padding-inline: 5em;
+    padding-top: 2em
+  }
+
+  main section:nth-of-type(1) {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: rem;
+    color: var(--color-bg);
+    border-radius: 10px;
+    
+  }
+
+  main section:nth-of-type(7) {
+    grid-column: span 2;
+  }
+
+
+  main section:nth-of-type(1) h1,
+  main section:nth-of-type(1) button {
+    grid-column: 1;
+    z-index: 1;
+  }
+
+  main section:nth-of-type(1) h1 {
+    font-size: 3em;
+
+  }
+  
+  main section:nth-of-type(1) img {
+    grid-column: 2;
+    max-width: 100%;
+    height: auto;
+    z-index: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+
+  }
+
+  footer section:nth-of-type(4) {
+    flex-direction: row;
+  }
+}
+
+
+/* header en navigatie */
+
+header nav:nth-of-type(1) ul {
+  list-style: none;
+}
+
+header nav:nth-of-type(1) select {
+  display: block;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--color-bg);
+  box-shadow: 0 -1px 5px var(--color-shadow);
+}
+
+header img {
+  height: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: block;
+  margin: 1em;
+}
+
+header nav:nth-of-type(1) {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: var(--color-bg);
+  top: 0;
+  z-index: 1;
+  translate: 100%;
+  transition: 0.3s ease;
+}
+
+header nav:nth-of-type(1) ul {
+  margin-top: 100px;
+}
+
+header nav:nth-of-type(1) ul a {
+font-family: "SoDoSansLight";
+  font-size: 20px;
+  margin: 10px; 
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+header button:nth-of-type(1) {
+  height: 30px;
+  z-index: 2;
+}
+
+header nav:nth-of-type(1).open {
+  translate: 0;
+ 
+}
+
+header button {
+  position: relative;
+  z-index: 200;
+  font-size: 1rem;
+  width: 3em;
+  aspect-ratio: 1;
+  padding: 0;
+  margin: 0;
+  border: none;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  order: 1;
+  background: none;
+}
+
+header button span {
+  display: block;
+  width: 1.5em;
+  height: .2em;
+  background-color: var(--color-text);
+  border-radius: 1em;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  transition: .5s;
+}
+
+header button span:nth-of-type(1) {
+  translate: 0 -.5em
+}
+
+header button span:nth-of-type(3) {
+  translate: 0 .5em
+}
+
+header button.is-open span:nth-of-type(1) {
+  translate: 0;
+  rotate: 45deg;
+}
+
+header button.is-open span:nth-of-type(2) {
+  scale: 0 1;
+}
+
+header button.is-open span:nth-of-type(3) {
+  translate: 0;
+  rotate: -45deg;
+}
+
+@media (min-width: 700px) {
+  header {
+    justify-content: start;
+  }
+
+  header nav:nth-of-type(1) {
+    position: static;
+    height: auto;
+    background: transparent;
+    z-index: 0;
+    translate: 0;
+    display: flex;
+  }
+
+  header nav:nth-of-type(1) ul {
+    display: flex;
+    margin: 0 auto;
+    gap: 20px;
+  }
+
+  header nav:nth-of-type(1) ul a {
+    font-family: "SoDoSans";
+    font-size: 18px;
+
+  }
+
+  header button:nth-of-type(1) {
+    display: none;
+  }
+}
+
+
+/* Nav2 */
+
+header nav:nth-of-type(2) {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: var(--color-bg);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  box-shadow: 0 -1px 5px var(--color-shadow);
+  gap: 50px;
+  font-family: "SoDoSans";
+  font-size: .8em;
+}
+
+header nav:nth-of-type(2) a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--color-nav);
+  text-decoration: none;
+  
+}
+
+header nav:nth-of-type(2) section:nth-of-type(1),
+header nav:nth-of-type(2) section:nth-of-type(2) {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+header nav:nth-of-type(2) section:nth-of-type(1) svg {
+  width: 24px;
+  height: 24px;
+}
+
+header nav:nth-of-type(2) section:nth-of-type(2) h2 {
+  text-align: center;
+  font-family: "SoDoSansRegular";
+  font-size: 1em;
+}
+
+/* Footer */
+
+footer {
+  background-color: var(--color-footer);
+  color: var(--color-bg);
+  padding: 2rem;
+  font-family: "SoDoSansRegular", sans-serif;
+}
+
+footer img {
+  margin-bottom: 1rem;
+}
+
+footer section summary {
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  color: var(--color-text2);
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer section summary::marker {
+  display: none;
+}
+
+footer section summary::after {
+  content: "⬇️";
+  font-size: 1.2rem;
+  color: var(--color-hover2);
+  margin-left: auto;
+}
+
+footer section ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0.5rem 0 0 0;
+}
+
+footer section li a {
+  color: var(--color-hover2);
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem 0;
+  font-size: 0.8rem;
+}
+
+footer section li a:hover {
+  color: var(--color-text2);
+}
+
+footer section:nth-of-type(4) {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+footer hr {
+  border: none;
+  border-top: 1px solid var(--color-hr);
+  margin: 2rem 0;
+}
+
+footer section:nth-of-type(4) a {
+  color: var(--color-hover2);
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+footer section:nth-of-type(4) a:hover {
+  color: var(--color-bg);
+}
+
+footer section:nth-of-type(5) {
+  display: flex;
+  gap: 1rem;
+}
+
+footer section:nth-of-type(5) svg {
+  width: 24px;
+  height: 24px;
+  fill: var(--color-text2);
+  cursor: pointer;
+  transition: fill 0.3s ease-in-out;
+}
+
+footer section:nth-of-type(5) svg:hover {
+  fill: var(--color-hover2);
+}
+

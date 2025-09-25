@@ -86,6 +86,7 @@ Homepage
 <details>
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
+
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
   Ik heb een begin gemaakt aan de website. Dit vind ik altijd lastig dus gebruik ik soms een deel van een andere website die ik al eerder heb gemaakt op een klein begin te hebben. Verder gaat het wel oke.
@@ -141,8 +142,11 @@ Vince: M'n navigatie perfect namaken en weten welke elementen ik daarvoor nodig 
 <details>
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
+  Links en prompts:
+  Gradient in header op 2de pagina : "Geef mij een kleurcode voor een overlopende groene gradient vanaf onder."
+
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Het coderen vind ik heel lastig. Ik ben bezig met het opbouwen van mijn eerste pagina de html en css. Door hulp vragen in de les en meedoen met de docent lukt het mij maar ik kijk wel op tegen het responsive maken voor groot scherm en het gebruiken van javascript.
 
 
   ### Agenda voor meeting
@@ -157,15 +161,12 @@ Vince: M'n navigatie perfect namaken en weten welke elementen ik daarvoor nodig 
 Serra : ik wil weten hoe ik m’n 2de navigatie moet maken en heb hulp nodig met m’n hamburgermenu.
 Geis : ik wil kijken of mijn html en css een beetje oke is, weten of ik aspect ratio in mijn css mag gebruiken en vragen hoeveel van mijn header ik moet uitwerken en wat de handigste manier is om dat uit te werken.
 June :
-Vince :
+Vince : Hamburger menu maken
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - 
 
 </details>
 

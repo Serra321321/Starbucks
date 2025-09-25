@@ -1,21 +1,27 @@
-let menuButton = document.querySelector("header > nav > button"); 
-let navMenu = document.querySelector("header nav ul");
+let button = document.querySelector("header button");
+// let menuButton = document.querySelector("button"); 
 
-menuButton.addEventListener("click", () => {
-  menuButton.classList.toggle("is-open");
-  navMenu.classList.toggle("show-menu");
-});
+button.onclick = toggleMenu;
 
-navMenu.querySelectorAll("a").forEach(link => {
-  link.addEventListener("click", () => {
-    menuButton.classList.remove("is-open");
-    navMenu.classList.remove("show-menu");
-  });
-});
+function toggleMenu() {
+  let nav = document.querySelector("header nav");
+  button.classList.toggle("is-open");
+
+  nav.classList.toggle("open");
+}
+
+// window.addEventListener("load", responivemenu);
+// window.addEventListener("resize", responivemenu);
+ 
+// console.log(menuButton);
+ 
 
 document.querySelectorAll("footer button").forEach(button => {
-  button.addEventListener("click", () => {
-    const list = button.nextElementSibling;
-    list.style.display = list.style.display === "block" ? "none" : "block";
-  });
+button.addEventListener("click", () => {
+const list = button.nextElementSibling;
+list.style.display = list.style.display === "block" ? "none" : "block";
 });
+});
+
+  //rgl 17 is niet goed want is styling
+  
