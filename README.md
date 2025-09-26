@@ -97,13 +97,6 @@ Homepage
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | Serra          | Geis               | Vince       | june        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
 
 Serra : Ik wil graag de opbouw van mijn HTML bespreken en kijken of er nog dingen niet goed zijn. Ook heb ik denk ik hulp nodig met het uitlijnen van de elementen door middel van een grid.
 -Groene lijn onder de eerste section gaat niet weg.
@@ -150,13 +143,6 @@ Vince: M'n navigatie perfect namaken en weten welke elementen ik daarvoor nodig 
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
 
 Serra : ik wil weten hoe ik m’n 2de navigatie moet maken en heb hulp nodig met m’n hamburgermenu.
 Geis : ik wil kijken of mijn html en css een beetje oke is, weten of ik aspect ratio in mijn css mag gebruiken en vragen hoeveel van mijn header ik moet uitwerken en wat de handigste manier is om dat uit te werken.
@@ -178,6 +164,7 @@ Vince : Hamburger menu maken
 
 <details>
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
+  Opzich werkt alles maar ik weet niet of het de bedoeling is dat de buttons worden voorgelezen ipv de kopjes.
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
@@ -194,18 +181,13 @@ Vince : Hamburger menu maken
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Ik heb afgelopen week veel aan mijn website gewerkt en heb veel stappen gezet met het afmaken van de pagina's en ga de komende week de puntjes op de i zetten. Ik vind t nog steeds lastig om zelf javascript te bedenken en te gebruiken maar dit gaat wel al een stuk beter dan een week geleden. 
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  
+Serra: Met screenreader worden de buttons en niet de kopjes voorgelezen. Ik heb nog hulp nodig met mijn 2de pagina responsive maken.
+Geis: mogen h’s op het begin van sections visually hidden zijn? Html van beide paginas nog nachecken dat er geen gekke dingen gebeuren (denk het niet maar je weet maar nooit) (vooral de footer).
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
@@ -255,8 +237,11 @@ Vince : Hamburger menu maken
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. Aria label / https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-label 
+  2. Details Summary / https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/summary
+  3. Dark color scheme / https://css-tricks.com/dark-modes-with-css/
+  4. Grid / https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout
+  5. Flexbox gebruiken / https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+  6. 
 
 </details>
