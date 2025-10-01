@@ -38,10 +38,11 @@ body {
 /*********************/
 
 :root {
+  color-scheme:light dark;
   --color-bg: #ffffff;
-  --color-text2: #ffffff;
+  --color-h: #ffffff;
   --color-text: #000000;
-  --color-green: #016341;
+  --color-brand: #016341;
   --color-nav: #016341;
   --color-card: #F7F7F7; 
   --color-hover: #46906E;
@@ -52,14 +53,17 @@ body {
   --color-gray: #B7B7B7;
 }
 
+
+/* Dark color scheme / https://css-tricks.com/dark-modes-with-css/ */
+
 /* Dark mode */
 
 @media (prefers-color-scheme: dark) {
   :root {
   --color-bg: #000000;
-  --color-text2: #ffffff;
+  --color-h: #ffffff;
   --color-text: #ffffff;
-  --color-green: #1e3932;
+  --color-brand: #1e3932;
   --color-nav: #D1E0DA;
   --color-card: #46906E; 
   --color-hover: #101c19;
@@ -148,7 +152,6 @@ header nav:nth-of-type(1) select {
   color: var(--color-text);
   margin-left: 2.5em;
   margin-top: 1em;
-
 
 }
 
@@ -266,7 +269,7 @@ footer section summary {
   font-size: 1rem;
   cursor: pointer;
   padding: 0.5rem 0;
-  color: var(--color-text2);
+  color: var(--color-h);
   font-weight: bold;
   display: flex;
   justify-content: space-between;
@@ -278,7 +281,7 @@ footer section summary::marker {
 }
 
 footer section summary::after {
-  content: "⬇️";
+  content: "⬇";
   font-size: 1.2rem;
   color: var(--color-hover2);
   margin-left: auto;
@@ -299,7 +302,7 @@ footer section li a {
 }
 
 footer section li a:hover {
-  color: var(--color-text2);
+  color: var(--color-h);
 }
 
 footer section:nth-of-type(4) {
@@ -333,7 +336,7 @@ footer section:nth-of-type(5) {
 footer section:nth-of-type(5) svg {
   width: 24px;
   height: 24px;
-  fill: var(--color-text2);
+  fill: var(--color-h);
   cursor: pointer;
   transition: fill 0.3s ease-in-out;
 }
@@ -402,18 +405,10 @@ footer section:nth-of-type(5) svg:hover {
   }
 
   header nav:nth-of-type(1) select {
-  padding: .5em .5em;
   border: none;
-  border-radius: 25px;
-  background-color: var(--color-green);
-  color: var(--color-text2);
+  color: var(--color-text);
   cursor: pointer;
-  box-shadow: 0 2px 5px var(--color-shadow);
-  transition: 0.3s ease;
-}
-
-header nav:nth-of-type(1) select:hover {
-  background-color: var(--color-hover);
+  
 }
 
   header nav:nth-of-type(2) {
@@ -467,4 +462,16 @@ header nav:nth-of-type(1) select:hover {
   footer section:nth-of-type(4) {
     flex-direction: row;
   }
+
+footer section:nth-of-type(1),
+footer section:nth-of-type(2),
+footer section:nth-of-type(3) {
+  display: inline-block;
+  vertical-align: top;
+  width: 400px;
+  margin-right: 1rem;
 }
+  
+}
+
+

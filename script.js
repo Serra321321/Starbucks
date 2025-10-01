@@ -1,5 +1,4 @@
 let button = document.querySelector("header button");
-// let menuButton = document.querySelector("button"); 
 
 button.onclick = toggleMenu;
 
@@ -10,18 +9,26 @@ function toggleMenu() {
   nav.classList.toggle("open");
 }
 
-// window.addEventListener("load", responivemenu);
-// window.addEventListener("resize", responivemenu);
- 
-// console.log(menuButton);
- 
+// Code met ChatGPT 
+// Prompt: "Hoe zorg ik ervoor dat mijn footer als het scherm groter wordt als 700px de footer opengeklapt blijft staan"
 
 document.querySelectorAll("footer button").forEach(button => {
 button.addEventListener("click", () => {
 const list = button.nextElementSibling;
-list.style.display = list.style.display === "block" ? "none" : "block";
 });
 });
 
-  //rgl 17 is niet goed want is styling
+function toggleFooterDetails() {
+  const details = document.querySelectorAll("footer details");
+
+  if (window.innerWidth > 700) {
+    details.forEach(detail => detail.setAttribute("open", ""));
+  } else {
+    details.forEach(detail => detail.removeAttribute("open"));
+  }
+}
+
+window.addEventListener("load", toggleFooterDetails);
+window.addEventListener("resize", toggleFooterDetails);
+
   

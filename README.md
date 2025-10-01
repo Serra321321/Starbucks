@@ -192,10 +192,19 @@ Geis: mogen h’s op het begin van sections visually hidden zijn? Html van beide
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - namen aanpassen van roots
+  - 2x onze koffie ? 
+  - 2de pagina h2 h3 en h4 aanpassen
+  - van color green color brand maken
+  - grid pagina 2: main: display: grid; grid-template: 1fr 1fre; gap: 1em;
+  section 1: position: sticky 
+  - vragen over grid aanpassen in gesprek 
+  - visually hidden op select gebruiken
+  - control option u pijltjes naar links
+  - vragen voor gesprek voorbereiden:
+  1. hoe switch je van nederlands naar engels?
+  2. over grid aanpassen
+  - Footer nog responsive maken.  height 0, media: heigt 100%, button display none
 
 </details>
 
@@ -207,9 +216,17 @@ Geis: mogen h’s op het begin van sections visually hidden zijn? Html van beide
 
 <details>
   <summary>uitwerken voor eindgesprek</summary>
+  Na het laatste voortgangsgesprek heb ik dit gedaan:
+  - Op de 2de pagina van de website alle h-nummers aangepast zodat het nu wel klopt.
+  - De 2de pagina (iets beter) responsive gemaakt, het werkt nog steeds niet zoals ik het had gewild maar is beter dan niet responsive.
+  - Errors weggehaald op beide pagina's.
+  - Bronnenlijst en read me bijgewerkt. 
+  - Namen in root aangepast (ipv --color-green nu --color-brand ).
+  - 
+
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
@@ -219,9 +236,11 @@ Geis: mogen h’s op het begin van sections visually hidden zijn? Html van beide
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  1. Het responsive maken van de 2de pagina vond ik erg lastig en is deels gelukt.
+  2. De styling van het hamburger menu is niet precies hoe het er op de echte website uitziet.
+  3. Zorgen dat de Nederlands/Engels knop werkt, volgens mij zijn er 2 manieren om dit te doen maar kosten deze beide veel tijd, ik heb ervoor gekozen om mij op andere dingen te focussen en de pagina's alleen in het nederlands te maken.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+
 </details>
 
 
@@ -233,15 +252,15 @@ Geis: mogen h’s op het begin van sections visually hidden zijn? Html van beide
 <details open>
   <summary>continu bijhouden terwijl je werkt</summary>
 
-  Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg). 
-  Nb. ChatGpT en andere AI horen er ook bij.
-  Nb. Vermeld de bronnen ook in je code.
-
   1. Aria label / https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-label 
   2. Details Summary / https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/summary
   3. Dark color scheme / https://css-tricks.com/dark-modes-with-css/
   4. Grid / https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout
   5. Flexbox gebruiken / https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-  6. 
+  6. Onze Koffies Responsive maken / https://codepen.io/shooft/pen/emJJBgX 
+  7. Code met ChatGPT: 
+Prompt: "Hoe zorg ik ervoor dat mijn footer als het scherm groter wordt als 700px de footer opengeklapt blijft staan".
+  8. Tip van Demi: Gebruik een article voor de 2de column.
+
 
 </details>

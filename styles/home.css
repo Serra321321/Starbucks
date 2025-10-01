@@ -4,11 +4,11 @@
 main section:nth-of-type(1) {
   display:grid;
   margin: 0 auto;
-  background-color: var(--color-green);
+  background-color: var(--color-brand);
 }
 
 main section:nth-of-type(1) h1{
-  color: var(--color-text2);
+  color: var(--color-h);
   font-size: 1.2rem;
   padding-left: 1.5em;
   font-family: "SoDoSansRegular", sans-serif;
@@ -23,7 +23,7 @@ main section button {
   border-radius: 100px;
   font-family: "SoDoSans";
   font-size: 0.9rem;
-  transition: var(--color-green) 1.5s ease-in-out;
+  transition: var(--color-brand) 1.5s ease-in-out;
   color: var(--color-text);
 }
 
@@ -83,14 +83,14 @@ main section:nth-of-type(2) p {
 main section:nth-of-type(2) button {
   width: 70%;
   margin-left: 4em;
-  background-color: var(--color-green);
-  color: var(--color-text2);
+  background-color: var(--color-brand);
+  color: var(--color-h);
   font-family: "SoDoSansRegular";
   padding: 1rem;
   border-radius: 100px;
   cursor: pointer;
   font-size: 1rem;
-  transition: var(--color-green) 1.5s ease-in-out;
+  transition: var(--color-brand) 1.5s ease-in-out;
 }
 
 main section:nth-of-type(2) button:hover {
@@ -102,7 +102,7 @@ main section:nth-of-type(2) button:hover {
 main section:nth-of-type(3) {
   display: flex;
   flex-direction: column;
-  background-color: var(--color-green);
+  background-color: var(--color-brand);
   border-radius: 8px;
   margin: 1em;
   text-align: left;
@@ -122,7 +122,7 @@ main section:nth-of-type(3) h2 {
   font-family: "SoDoSans", sans-serif;
   margin-left: 1em;
   margin-bottom: 0;
-  color: var(--color-text2);
+  color: var(--color-h);
 }
 
 main section:nth-of-type(3) p {
@@ -130,7 +130,7 @@ main section:nth-of-type(3) p {
   font-size: 0.8rem;
   padding: 1.5em;
   margin: 0;
-  color: var(--color-text2);
+  color: var(--color-h);
 }
 
 main section:nth-of-type(3) button {
@@ -143,7 +143,7 @@ main section:nth-of-type(3) button {
   border-radius: 100px;
   cursor: pointer;
   font-size: 1rem;
-  transition: var(--color-green) 1.5s ease-in-out;
+  transition: var(--color-brand) 1.5s ease-in-out;
 }
 
 main section:nth-of-type(3) button:hover {
@@ -187,14 +187,14 @@ main section:nth-of-type(4) p {
 main section:nth-of-type(4) button {
   width: 70%;
   margin-left: 4em;
-  background-color: var(--color-green);
-  color: var(--color-text2);
+  background-color: var(--color-brand);
+  color: var(--color-h);
   font-family: "SoDoSansRegular";
   padding: 1rem;
   border-radius: 100px;
   cursor: pointer;
   font-size: 1rem;
-  transition: var(--color-green) 1.5s ease-in-out;
+  transition: var(--color-brand) 1.5s ease-in-out;
 }
 
 main section:nth-of-type(4) button:hover {
@@ -206,7 +206,7 @@ main section:nth-of-type(4) button:hover {
 main section:nth-of-type(5) {
   display: flex;
   flex-direction: column;
-  background-color: var(--color-green);
+  background-color: var(--color-brand);
   border-radius: 8px;
   margin: 1em;
   text-align: left;
@@ -226,7 +226,7 @@ main section:nth-of-type(5) h2 {
   font-family: "SoDoSans", sans-serif;
   margin-left: 1em;
   margin-bottom: 0;
-  color: var(--color-text2);
+  color: var(--color-h);
 }
 
 main section:nth-of-type(5) p {
@@ -234,7 +234,7 @@ main section:nth-of-type(5) p {
   font-size: 0.8rem;
   padding: 1.5em;
   margin: 0;
-  color: var(--color-text2);
+  color: var(--color-h);
 }
 
 main section:nth-of-type(5) button {
@@ -247,7 +247,7 @@ main section:nth-of-type(5) button {
   border-radius: 100px;
   cursor: pointer;
   font-size: 1rem;
-  transition: var(--color-green) 1.5s ease-in-out;
+  transition: var(--color-brand) 1.5s ease-in-out;
 }
 
 main section:nth-of-type(5) button:hover {
@@ -292,14 +292,14 @@ main section:nth-of-type(6) p {
 main section:nth-of-type(6) button {
   width: 70%;
   margin-left: 4em;
-  background-color: var(--color-green);
-  color: var(--color-text2);
+  background-color: var(--color-brand);
+  color: var(--color-h);
   font-family: "SoDoSansRegular";
   padding: 1rem;
   border-radius: 100px;
   cursor: pointer;
   font-size: 1rem;
-  transition: var(--color-green) 1.5s ease-in-out;
+  transition: var(--color-brand) 1.5s ease-in-out;
 }
 
 main section:nth-of-type(6) button:hover {
@@ -311,7 +311,7 @@ main section:nth-of-type(6) button:hover {
 main section:nth-of-type(7) {
   display: flex;
   flex-direction: column;
-  background-color: var(--color-green);
+  background-color: var(--color-brand);
   border-radius: 10px;
   margin: 1em;
   text-align: left;
@@ -332,7 +332,7 @@ main section:nth-of-type(7) h2 {
   font-family: "SoDoSans", sans-serif;
   margin-left: 1em;
   margin-bottom: 0;
-  color: var(--color-text2);
+  color: var(--color-h);
 }
 
 main section:nth-of-type(7) p {
@@ -340,7 +340,7 @@ main section:nth-of-type(7) p {
   font-size: 0.8rem;
   padding: 1.5em;
   margin: 0;
-  color: var(--color-text2);
+  color: var(--color-h);
 }
 
 main section:nth-of-type(7) button {
@@ -353,7 +353,7 @@ main section:nth-of-type(7) button {
   border-radius: 100px;
   cursor: pointer;
   font-size: 1rem;
-  transition: var(--color-green) 1.5s ease-in-out;
+  transition: var(--color-brand) 1.5s ease-in-out;
 }
 
 main section:nth-of-type(7) button:hover {
