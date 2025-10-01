@@ -12,10 +12,6 @@ function toggleMenu() {
 // Code met ChatGPT 
 // Prompt: "Hoe zorg ik ervoor dat mijn footer als het scherm groter wordt als 700px de footer opengeklapt blijft staan"
 
-document.querySelectorAll("footer button").forEach(button => {
-button.addEventListener("click", () => {
-});
-});
 
 function toggleFooterDetails() {
   const details = document.querySelectorAll("footer details");
