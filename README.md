@@ -34,7 +34,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 <details open>
   <summary>uitwerken voor kick-off werkgroep</summary>
-
+Ik ben begonnen met het maken van mijn website voor small screen en heb al een deel van de HTML en Css gemaakt.
   ### Je opdracht:
   https://www.starbucks.nl 
   #### Screenshot(s) van de eerste pagina (small screen): 
@@ -43,7 +43,7 @@ Homepage
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="menu pagina">
+  <img src="images/Screenshot2.png" width="375px" alt="onze koffies pagina">
  
 </details>
 
@@ -69,15 +69,9 @@ Homepage
 <details>
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
-  ### de hele pagina: 
-  <img src="images/Breakdown.jpg" width="375px" alt="breakdown van de hele pagina">
-
-  ### dynamisch deel (bijv menu): 
-  <img src="images/Breakdown.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
+  ### de hele pagina en dynamisch deel (hamburgermenu): 
+  <img src="images/Breakdown.jpg" width="375px" alt="breakdown van de hele pagina rechts en links het dynamische deel">
 </details>
-
-
 
 
 
@@ -88,7 +82,6 @@ Homepage
 
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
   Ik heb een begin gemaakt aan de website. Dit vind ik altijd lastig dus gebruik ik soms een deel van een andere website die ik al eerder heb gemaakt op een klein begin te hebben. Verder gaat het wel oke.
 
   Gebruikte bronnen:
@@ -101,11 +94,9 @@ Homepage
 Serra : Ik wil graag de opbouw van mijn HTML bespreken en kijken of er nog dingen niet goed zijn. Ook heb ik denk ik hulp nodig met het uitlijnen van de elementen door middel van een grid.
 -Groene lijn onder de eerste section gaat niet weg.
 -Deel van de padding weghalen lukt niet
-
 Geis: Css bespreken en kijken welke elementen in een Ul horen.
-
 Vince: M'n navigatie perfect namaken en weten welke elementen ik daarvoor nodig heb in mijn css. En gebruik ik de sections goed en klopt de footer sestematisch.
-- 
+
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
@@ -135,9 +126,6 @@ Vince: M'n navigatie perfect namaken en weten welke elementen ik daarvoor nodig 
 <details>
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
-  Links en prompts:
-  Gradient in header op 2de pagina : "Geef mij een kleurcode voor een overlopende groene gradient vanaf onder."
-
   ### Stand van zaken
   Het coderen vind ik heel lastig. Ik ben bezig met het opbouwen van mijn eerste pagina de html en css. Door hulp vragen in de les en meedoen met de docent lukt het mij maar ik kijk wel op tegen het responsive maken voor groot scherm en het gebruiken van javascript.
 
@@ -150,9 +138,8 @@ June :
 Vince : Hamburger menu maken
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - 
+  
+  Ik ben geholpen met met maken van mijn 2de navigatie, die was al bijna klaar maar is nu beter. Ook hebben we mijn code bekeken.
 
 </details>
 
@@ -167,8 +154,7 @@ Vince : Hamburger menu maken
   Opzich werkt alles maar ik weet niet of het de bedoeling is dat de buttons worden voorgelezen ipv de kopjes.
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
-
+Ik moet beter leren omgaan met screenreader, opzich werkt mijn website er goed mee maar weet ik zelf nog niet precies hoe het werkt. 
 </details>
 
 
@@ -222,23 +208,32 @@ Geis: mogen h’s op het begin van sections visually hidden zijn? Html van beide
   - Errors weggehaald op beide pagina's.
   - Bronnenlijst en read me bijgewerkt. 
   - Namen in root aangepast (ipv --color-green nu --color-brand ).
-  - 
+  - Een Arialabel toegevoegd aan buttons op de home pagina.
 
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="" width="375px" alt="uitomst opdracht 1">
-
+  <img src="images/Screenshot3.png" width="375px" alt="Homepagina">
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+<img src="images/Screenshot4.png" width="375px" alt="Homepagina">
+Ik heb geleerd om een semantische wesbite te maken zonder gebruik te maken van divs, classes, id's of articles.
 
+<img src="images/Screenshot5.png" width="375px" alt="hamburgermenu">
+Ik heb geleerd een hamburgermenu te maken dat inklapt en uitklapt wanneer het scherm word geschaald.
+
+<img src="images/Screenshot6.png" width="375px" alt="footer">
+Ik heb geleerd een footer te maken dmv details & summary. Daarnaast ook hoe ik google maps in mijn html kan gebruiken en een 2de navigatie onderaan de pagina zoals op de screenshot te zien is.
+
+Verder over het algemeen ben merk ik persoonlijk dat de lessen mij veel hebben geholpen om over het algemeen coderen beter te begrijpen. Het is nog steeds niet iets waar ik later mee verder wil gaan maar ik snap de basis al wel een stuk beter dan voor de start van dit project.
 
   ### Dit was lastig/Is niet gelukt:
   1. Het responsive maken van de 2de pagina vond ik erg lastig en is deels gelukt.
   2. De styling van het hamburger menu is niet precies hoe het er op de echte website uitziet.
   3. Zorgen dat de Nederlands/Engels knop werkt, volgens mij zijn er 2 manieren om dit te doen maar kosten deze beide veel tijd, ik heb ervoor gekozen om mij op andere dingen te focussen en de pagina's alleen in het nederlands te maken.
+  4. De iconen in de 2de navigatie als stroke en als fill maken. Ik heb ze altijd als fill gedaan.
+  5. Geen gebruik maken van articles, ik heb 1 article gebruikt op de 2de pagina omdat ik er niet anders uit kwam.
 
 
 </details>
@@ -260,7 +255,7 @@ Geis: mogen h’s op het begin van sections visually hidden zijn? Html van beide
   6. Onze Koffies Responsive maken / https://codepen.io/shooft/pen/emJJBgX 
   7. Code met ChatGPT: 
 Prompt: "Hoe zorg ik ervoor dat mijn footer als het scherm groter wordt als 700px de footer opengeklapt blijft staan".
+Prompt: "Ik wil een gradient in header op 2de pagina, geef mij een kleurcode voor een overlopende groene gradient vanaf onder."
   8. Tip van Demi: Gebruik een article voor de 2de column.
-
 
 </details>

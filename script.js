@@ -14,7 +14,6 @@ function toggleMenu() {
 
 document.querySelectorAll("footer button").forEach(button => {
 button.addEventListener("click", () => {
-const list = button.nextElementSibling;
 });
 });
 
